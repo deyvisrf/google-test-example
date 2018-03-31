@@ -8,8 +8,7 @@ pipeline {
     }
     stage('Install gems') {
       steps {
-        sh '''cd google-test-example
-bundle install'''
+        sh 'ls'
       }
     }
     stage('Test UI') {
