@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Install gems') {
       steps {
-        sh '''cucumber
+        sh '''bundle install --path vendor/bundle
 '''
       }
     }
