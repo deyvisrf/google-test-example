@@ -9,7 +9,8 @@ pipeline {
     stage('Install gems') {
       steps {
         sh '''ls
-bundle install'''
+'''
+        sh 'bundle install'
       }
     }
     stage('Test UI') {
